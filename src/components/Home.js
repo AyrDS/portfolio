@@ -10,7 +10,7 @@ const Home = () => {
 
     useEffect(() => {
         const typed = new Typed(element.current, {
-            strings: ['Desarrollador Front-end', 'Desarrollador Back-end', 'Desarrollador Full-stack'],
+            strings: ['Desarrollador Front-end.', 'Desarrollador Back-end.', 'Desarrollador Full-stack.'],
             startDelay: 300,
             typeSpeed: 50,
             backSpeed: 50,
