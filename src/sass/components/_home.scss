@@ -1,0 +1,41 @@
+.home {
+    height: 100vh;
+    position: relative;
+}
+
+.home-info {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+
+    .home-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+    }
+}
+
+.home-welcome {
+    text-align: center;
+    padding: 10px;
+    backdrop-filter: blur(2px);
+
+    p {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 10px 0;
+        color: $fluor-green;
+    }
+
+    span {
+        font-size: 30px;
+    }
+
+}
