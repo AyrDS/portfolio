@@ -1,0 +1,112 @@
+.projects {
+    position: relative;
+    background-color: $bg-color;
+    padding: 40px 5vw 40px 5vw;
+
+    h2 {
+        padding: 25px 0;
+        font-size: 32px;
+    }
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 850px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+
+.project-item {
+    margin: 20px;
+    text-align: center;
+    background-color: $bg-color;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    &:hover .project-item_description {
+        visibility: visible;
+        opacity: 1;
+        border-radius: 10px;
+        transform: translateY(-300px) scale(1.1);
+    }
+
+    .project-item_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: all 1s;
+        border-radius: 10px;
+        max-height: 200px;
+    }
+
+    .project-item_description {
+        position: absolute;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        opacity: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        top: 300px;
+        transition: .5s all;
+
+        h3 {
+            margin-bottom: 15px;
+        }
+    }
+
+}
+
+.project-item_containerIcons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    .project-item_icon {
+        width: 35px;
+        height: 35px;
+        transition: .3s;
+
+        &:hover {
+            transform: rotate(10deg) scale(1.1);
+        }
+    }
+}
+
+.projects-item_containerButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-item_button {
+    text-decoration: none;
+    color: $bg-color;
+    background-color: $letter-color;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: .3s all;
+
+    &:hover {
+        background-color: $fluor-green;
+    }
+
+    span {
+        margin-right: 5px;
+    }
+}

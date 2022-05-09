@@ -71,6 +71,6 @@
     transition: all .3s;
 
     &:hover {
-        transform: translateY(-5px) rotate(10deg);
+        transform: translateY(-5px) rotate(10deg) scale(1.1);
     }
 }

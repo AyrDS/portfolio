@@ -9,6 +9,10 @@ import redux from '../assets/redux.png';
 import mongo from '../assets/mongo.png';
 import typescript from '../assets/typescript.png';
 import git from '../assets/git.png';
+import journal from '../assets/journal.png';
+import calendar from '../assets/calendar.png';
+import experta from '../assets/experta.png';
+import argensteam from '../assets/argensteam.png';
 
 export const skills = [
     {
@@ -55,4 +59,99 @@ export const skills = [
         name: 'Git',
         icon: git,
     }
-]
+];
+
+export const projects = [
+    {
+        name: 'Journal App',
+        description: 'Creación de notas por días',
+        img: journal,
+        link: 'https://journal-app-ayrds.netlify.app/',
+        github: 'https://github.com/AyrDS/journal-app',
+        icons: [
+            {
+                id: 1,
+                icon: react
+            },
+            {
+                id: 2,
+                icon: redux
+            },
+            {
+                id: 3,
+                icon: firebase
+            }
+        ]
+    },
+    {
+        name: 'Calendar MERN',
+        description: 'Calendario de eventos con MERN',
+        img: calendar,
+        link: 'https://calendar-ayrds.herokuapp.com/',
+        github: 'https://github.com/AyrDS/calendar-mern',
+        icons: [
+            {
+                id: 1,
+                icon: react
+            },
+            {
+                id: 2,
+                icon: mongo
+            },
+            {
+                id: 3,
+                icon: node
+            },
+            {
+                id: 4,
+                icon: redux
+            }
+        ]
+    },
+    {
+        name: 'Minijuego Experta',
+        description: 'Minijuego de evitar obstaculos',
+        img: experta,
+        link: 'https://experta-juego.netlify.app/',
+        github: 'https://github.com/AyrDS/minijuego',
+        icons: [
+            {
+                id: 1,
+                icon: html
+            },
+            {
+                id: 2,
+                icon: css
+            },
+            {
+                id: 3,
+                icon: js
+            }
+        ]
+    },
+    {
+        name: 'Argensteam React',
+        description: 'Tienda virtual de juegos y consolas',
+        img: argensteam,
+        link: undefined,
+        github: 'https://github.com/AyrDS/reactCoder',
+        icons: [
+            {
+                id: 1,
+                icon: html
+            },
+            {
+                id: 2,
+                icon: css
+            },
+            {
+                id: 3,
+                icon: react
+            },
+            {
+                id: 4,
+                icon: firebase
+            }
+        ]
+    }
+];
