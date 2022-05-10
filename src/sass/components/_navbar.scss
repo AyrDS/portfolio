@@ -7,12 +7,13 @@
     top: 0;
     background-color: transparent;
     backdrop-filter: blur(1px);
-    z-index: 999;
+    z-index: 900;
     width: 100%;
     padding: 20px 5vw 20px 5vw;
 
     .header-logo {
         font-size: 25px;
+
         span {
             color: $fluor-green;
         }
@@ -20,6 +21,12 @@
 }
 
 .nav {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+
     ul {
         display: flex;
         justify-content: space-between;
@@ -37,5 +44,85 @@
         &:hover {
             color: $fluor-green;
         }
+    }
+}
+
+.header-burger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 5vw;
+    z-index: 999;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    .burger {
+        height: 3px;
+        width: 30px;
+        background-color: $letter-color;
+        display: block;
+        margin: 5px auto;
+    }
+}
+
+.slider-menu {
+    background-color: $fluor-green;
+    transition: all .3s;
+}
+
+.nav-mobile {
+    margin-top: 25vh;
+    height: 50%;
+
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        height: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: $bg-color;
+        transition: all .4s;
+        font-size: 7vw;
+        font-weight: bold;
+
+        &:hover {
+            color: $letter-color;
+        }
+    }
+}
+
+.button-offcanvas {
+    position: fixed;
+    right: 5vw;
+    top: 5vh;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    .burger-offcanvas {
+        width: 30px;
+        height: 3px;
+        display: block;
+        background-color: $bg-color;
+        margin: 5px auto;
+    }
+
+    .span-1 {
+        transform: rotate(-45deg) translate(-5px, -4px);
+    }
+
+    .span-2 {
+        transform: rotate(45deg) translate(-10px, -1px);
+
     }
 }
