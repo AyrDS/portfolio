@@ -17,14 +17,22 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
     gap: 20px;
-
     padding: 70px 0;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
 }
 
 .contact-icon {
 
     .contact-icon_img {
-        width: 85px;
+        width: 65px;
+
+        @media (min-width: 768px) {
+            width: 85px;
+        }
     }
 }
