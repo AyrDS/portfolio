@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer className='footer' >
             <p>
-                Hecho con <FontAwesomeIcon icon="fa-solid fa-heart" />
+                Hecho con <span> <FontAwesomeIcon icon="fa-solid fa-heart" /> </span>
             </p>
             <p> Todos los derechos reservados AyrDS. {year} &copy; </p>
         </footer>
