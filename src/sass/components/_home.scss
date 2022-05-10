@@ -22,6 +22,10 @@
         -moz-user-select: none;
         -webkit-user-select: none;
         -ms-user-select: none;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 }
 
@@ -31,17 +35,29 @@
     backdrop-filter: blur(2px);
 
     p {
-        font-size: 30px;
+        font-size: 25px;
+
+        @media (min-width: 768px) {
+            font-size: 30px;
+        }
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 35px;
         margin: 10px 0;
         color: $fluor-green;
+
+        @media (min-width: 768px) {
+            font-size: 40px;
+        }
     }
 
     span {
-        font-size: 30px;
+        font-size: 25px; 
+
+        @media (min-width: 768px) {
+            font-size: 30px;
+        }
     }
 
 }
