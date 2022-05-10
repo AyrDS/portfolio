@@ -13,6 +13,10 @@ import journal from '../assets/journal.png';
 import calendar from '../assets/calendar.png';
 import experta from '../assets/experta.png';
 import argensteam from '../assets/argensteam.png';
+import github from '../assets/github.png';
+import gmail from '../assets/gmail.svg';
+import linkedin from '../assets/linkedin.svg';
+import wp from '../assets/whatsapp.svg';
 
 export const skills = [
     {
@@ -153,5 +157,28 @@ export const projects = [
                 icon: firebase
             }
         ]
+    }
+];
+
+export const contacts = [
+    {
+        name: 'Github',
+        icon: github,
+        link: 'https://github.com/AyrDS'
+    },
+    {
+        name: 'Gmail',
+        icon: gmail,
+        link: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ayrtonds97@gmail.com'
+    },
+    {
+        name: 'Linkedin',
+        icon: linkedin,
+        link: 'https://www.linkedin.com/in/ayrds/'
+    },
+    {
+        name: 'Whatsapp',
+        icon: wp,
+        link: 'https://wa.me/+541150601057/?text=¡Hola!%20'
     }
 ];
