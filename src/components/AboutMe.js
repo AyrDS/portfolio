@@ -26,13 +26,15 @@ const AboutMe = () => {
                 transformOrigin: 'center bottom',
                 duration: .5,
                 ease: 'back',
-                scrollTrigger: {
-                    trigger: trigger.current,
-                    toggleActions: 'play none none reverse',
-                    start: '-150 50%',
-                }
             }
-        )
+        );
+
+        ScrollTrigger.create({
+            trigger: trigger.current,
+            toggleActions: 'play none none reverse',
+            start: '-150 50%',
+            animation: tl
+        })
     }, []);
 
     const getInstance = useCallback(instance => {
