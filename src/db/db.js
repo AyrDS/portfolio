@@ -17,6 +17,7 @@ import github from '../assets/github.png';
 import gmail from '../assets/gmail.svg';
 import linkedin from '../assets/linkedin.svg';
 import wp from '../assets/whatsapp.svg';
+import portfolio from '../assets/portfolio.png';
 
 export const skills = [
     {
@@ -155,6 +156,19 @@ export const projects = [
             {
                 id: 4,
                 icon: firebase
+            }
+        ]
+    },
+    {
+        name: 'Portfolio actual',
+        description: 'Un vistazo a mi perfil',
+        img: portfolio,
+        link: undefined,
+        github: 'https://github.com/AyrDS/portfolio',
+        icons: [
+            {
+                id: 1,
+                icon: react
             }
         ]
     }
