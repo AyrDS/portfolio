@@ -49,7 +49,7 @@ const Contact = () => {
 
 
     return (
-        <section className='contact' ref={containerRef} >
+        <section className='contact' ref={containerRef} id='contacto' >
             <h2>Contacto</h2>
             <p>¡Contactame através de diferentes redes!</p>
 
