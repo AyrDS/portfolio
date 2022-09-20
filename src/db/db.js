@@ -18,6 +18,7 @@ import gmail from '../assets/gmail.svg';
 import linkedin from '../assets/linkedin.svg';
 import wp from '../assets/whatsapp.svg';
 import portfolio from '../assets/portfolio.png';
+import currencyCorn from '../assets/curr-corn.png'
 
 export const skills = [
     {
@@ -169,6 +170,23 @@ export const projects = [
             {
                 id: 1,
                 icon: react
+            }
+        ]
+    },
+    {
+        name: 'Currency Convert',
+        description: 'Conversión de distintas divisas',
+        img: currencyCorn,
+        link: 'https://curr-corn.netlify.app/',
+        github: 'https://github.com/AyrDS/currency-converter',
+        icons: [
+            {
+                id: 1,
+                icon: react
+            },
+            {
+                id: 2,
+                icon: typescript
             }
         ]
     }
