@@ -18,7 +18,13 @@ import gmail from '../assets/gmail.svg';
 import linkedin from '../assets/linkedin.svg';
 import wp from '../assets/whatsapp.svg';
 import portfolio from '../assets/portfolio.png';
-import currencyCorn from '../assets/curr-corn.png'
+import currencyCorn from '../assets/curr-corn.png';
+import dw_certi from '../assets/certifications/dw-certi.png';
+import js_certi from '../assets/certifications/js-certi.png';
+import node_certi from '../assets/certifications/node-certi.jpg';
+import react_certi from '../assets/certifications/react-certi.png';
+import react_udemy_certi from '../assets/certifications/react-udemy-certi.jpg';
+import socket_certi from '../assets/certifications/socket-certi.jpg';
 
 export const skills = [
     {
@@ -214,3 +220,30 @@ export const contacts = [
         link: 'https://wa.me/+541150601057/?text=¡Hola!%20'
     }
 ];
+
+export const certifications = [
+    {
+        id: 1,
+        img: dw_certi
+    },
+    {
+        id: 2,
+        img: js_certi
+    },
+    {
+        id: 3,
+        img: react_certi
+    },
+    {
+        id: 4,
+        img: node_certi
+    },
+    {
+        id: 5,
+        img: socket_certi
+    },
+    {
+        id: 6,
+        img: react_udemy_certi
+    },
+]

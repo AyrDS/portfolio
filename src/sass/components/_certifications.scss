@@ -1,0 +1,25 @@
+.certifications {
+   padding: 40px 5vw 40px 5vw;
+   position: relative;
+   background-color: $bg-color;
+
+   h2 {
+      padding: 25px 0;
+      font-size: 32px;
+      color: $fluor-green;
+   }
+}
+
+.slide-img {
+   width: 75%;
+   display: block;
+   margin: 0 auto;
+
+   @media (min-width: 1024px) {
+      width: 50%;
+   }
+
+   @media (min-width: 1280px) {
+      width: 40%;
+   }
+}
