@@ -6,7 +6,7 @@ export const Certifications = () => {
 
 
    return (
-      <section className="certifications" >
+      <section className="certifications" id='certificados' >
          <h2>Certificados</h2>
 
          <div>
