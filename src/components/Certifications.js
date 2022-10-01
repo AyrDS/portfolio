@@ -13,7 +13,7 @@ export const Certifications = () => {
             <Fade duration={3000}>
                {
                   certifications.map(({ id, img }) => (
-                     <img src={img} className='slide-img' key={id} />
+                     <img src={img} className='slide-img' key={id} alt='Imagen Certificado' />
                   ))
                }
 
