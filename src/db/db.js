@@ -220,30 +220,3 @@ export const contacts = [
         link: 'https://wa.me/+541150601057/?text=¡Hola!%20'
     }
 ];
-
-export const certifications = [
-    {
-        id: 1,
-        img: dw_certi
-    },
-    {
-        id: 2,
-        img: js_certi
-    },
-    {
-        id: 3,
-        img: react_certi
-    },
-    {
-        id: 4,
-        img: node_certi
-    },
-    {
-        id: 5,
-        img: socket_certi
-    },
-    {
-        id: 6,
-        img: react_udemy_certi
-    },
-]
