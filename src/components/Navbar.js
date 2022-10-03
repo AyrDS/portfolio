@@ -30,11 +30,6 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href='#certificados'>
-                            Certificados
-                        </a>
-                    </li>
-                    <li>
                         <a href='#contacto'>
                             Contacto
                         </a>
@@ -71,11 +66,6 @@ const Navbar = () => {
                         <li onClick={handleClose} >
                             <a href='#proyectos'>
                                 Proyectos
-                            </a>
-                        </li>
-                        <li onClick={handleClose} >
-                            <a href='#certificados'>
-                                Certificados
                             </a>
                         </li>
                         <li onClick={handleClose} >
