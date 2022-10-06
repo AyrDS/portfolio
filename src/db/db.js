@@ -12,7 +12,7 @@ import git from '../assets/git.png';
 import journal from '../assets/journal.png';
 import calendar from '../assets/calendar.png';
 import experta from '../assets/experta.png';
-import argensteam from '../assets/argensteam.png';
+import expenseApp from '../assets/expense-app.png';
 import github from '../assets/github.png';
 import gmail from '../assets/gmail.svg';
 import linkedin from '../assets/linkedin.svg';
@@ -136,28 +136,16 @@ export const projects = [
         ]
     },
     {
-        name: 'Argensteam React',
-        description: 'Tienda virtual de juegos y consolas',
-        img: argensteam,
-        link: undefined,
-        github: 'https://github.com/AyrDS/reactCoder',
+        name: 'Expense App',
+        description: 'Aplicación de controlador de gastos',
+        img: expenseApp,
+        link: 'https://expenseapp-ayrds.netlify.app/',
+        github: 'https://github.com/AyrDS/expenseApp',
         icons: [
             {
                 id: 1,
-                icon: html
-            },
-            {
-                id: 2,
-                icon: css
-            },
-            {
-                id: 3,
                 icon: react
             },
-            {
-                id: 4,
-                icon: firebase
-            }
         ]
     },
     {
