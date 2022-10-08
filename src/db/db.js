@@ -19,6 +19,7 @@ import linkedin from '../assets/linkedin.svg';
 import wp from '../assets/whatsapp.svg';
 import portfolio from '../assets/portfolio.png';
 import currencyCorn from '../assets/curr-corn.png';
+import styledCompoents from '../assets/styled.svg'
 
 export const skills = [
     {
@@ -48,6 +49,10 @@ export const skills = [
     {
         name: 'Redux',
         icon: redux,
+    },
+    {
+        name: 'Styled Components',
+        icon: styledCompoents
     },
     {
         name: 'NodeJS',
