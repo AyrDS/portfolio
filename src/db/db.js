@@ -20,6 +20,8 @@ import wp from '../assets/whatsapp.svg';
 import portfolio from '../assets/portfolio.png';
 import currencyCorn from '../assets/curr-corn.png';
 import styledCompoents from '../assets/styled.svg'
+import socketIo from '../assets/socket-io.png';
+import ayrdschat from '../assets/ayrds-chat.png';
 
 export const skills = [
     {
@@ -59,6 +61,10 @@ export const skills = [
         icon: node,
     },
     {
+        name: 'Socket.IO',
+        icon: socketIo
+    },
+    {
         name: 'MongoDB',
         icon: mongo,
     },
@@ -73,6 +79,31 @@ export const skills = [
 ];
 
 export const projects = [
+    {
+        name: 'Ayrds-chat',
+        description: 'Aplicación de chat con autenticación',
+        img: ayrdschat,
+        link: 'https://ayrds-chat.netlify.app/#/auth/register',
+        github: 'https://github.com/AyrDS/ayrds-chat',
+        icons: [
+            {
+                id: 1,
+                icon: react,
+            },
+            {
+                id: 2,
+                icon: node
+            },
+            {
+                id: 3,
+                icon: mongo
+            },
+            {
+                id: 4,
+                icon: socketIo
+            }
+        ]
+    },
     {
         name: 'Journal App',
         description: 'Creación de notas por días',

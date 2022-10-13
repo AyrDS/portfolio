@@ -8,6 +8,22 @@
         font-size: 32px;
         color: $fluor-green;
     }
+
+    .projects-btn {
+        text-decoration: none;
+        color: $bg-color;
+        background-color: $letter-color;
+        font-weight: bolder;
+        padding: 15px;
+        border-radius: 5px;
+        transition: all .3s;
+        margin-top: 15px;
+        display: inline-block;
+
+        &:hover {
+            background-color: $fluor-green;
+        }
+    }
 }
 
 .projects-container {
@@ -22,6 +38,8 @@
         grid-template-columns: repeat(3, 1fr);
         
     }
+
+    
 }
 
 .project-item {

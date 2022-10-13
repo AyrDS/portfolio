@@ -10,6 +10,7 @@ const Projects = () => {
     const projectsArr = useRef([]);
     projectsArr.current = [];
     const containerRef = useRef();
+    const btnRef = useRef();
 
     useEffect(() => {
         let tl = gsap.timeline();
@@ -40,6 +41,30 @@ const Projects = () => {
 
     }, []);
 
+    useEffect(() => {
+        let tl = gsap.timeline();
+
+        tl.fromTo(btnRef.current,
+            {
+                y: '30',
+                opacity: 0
+            },
+            {
+                y: '-20',
+                opacity: 1,
+                stagger: .4,
+                duration: .4,
+                ease: 'back'
+            });
+
+        ScrollTrigger.create({
+            trigger: btnRef.current,
+            start: '-300 50%',
+            animation: tl,
+            toggleActions: 'play none none reverse',
+        })
+    }, []);
+
 
     const addRef = (element) => {
         if (element && !projectsArr.current.includes(element)) {
@@ -62,7 +87,15 @@ const Projects = () => {
                     ))
                 }
             </div>
-
+            <a
+                className="projects-btn"
+                href="https://github.com/AyrDS?tab=repositories"
+                target="_blank"
+                ref={btnRef}
+                rel="noreferrer"
+            >
+                ¡Mira todos los proyectos aquí!
+            </a>
         </section>
     )
 }

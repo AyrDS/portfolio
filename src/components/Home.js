@@ -30,7 +30,7 @@ const Home = () => {
     }
 
     const particlesLoaded = (container) => {
-        console.log(container);
+        // console.log(container);
     };
 
     return (
