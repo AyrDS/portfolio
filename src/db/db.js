@@ -22,6 +22,7 @@ import currencyCorn from '../assets/curr-corn.png';
 import styledCompoents from '../assets/styled.svg'
 import socketIo from '../assets/socket-io.png';
 import ayrdschat from '../assets/ayrds-chat.png';
+import nextask from '../assets/demo-next.png';
 
 export const skills = [
     {
@@ -79,6 +80,31 @@ export const skills = [
 ];
 
 export const projects = [
+    {
+        name: 'NexTask',
+        description: 'Web app de gestión de proyectos',
+        img: nextask,
+        link: 'https://nex-task.netlify.app/',
+        github: 'https://github.com/AyrDS/nextTask',
+        icons: [
+            {
+                id: 1,
+                icon: react,
+            },
+            {
+                id: 2,
+                icon: node
+            },
+            {
+                id: 3,
+                icon: mongo
+            },
+            {
+                id: 4,
+                icon: socketIo
+            }
+        ]
+    },
     {
         name: 'Ayrds-chat',
         description: 'Aplicación de chat con autenticación',
